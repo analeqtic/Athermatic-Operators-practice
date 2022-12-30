@@ -1,0 +1,29 @@
+using System;
+
+namespace Program
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float num01;
+            float num02;
+
+            Console.WriteLine("Hello! Let's try find the area of a Kite! ");
+            Task.Delay(3000).Wait();
+            Console.Write("First input the first Diagonal Length: ");
+            num01 = float.Parse(Console.ReadLine());
+            Console.Write("Okay, now can you input your second Diagonal Length: ");
+            num02 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Thanks for inputting your results, this may take 5-6 seconds!");
+
+            float result = (num01 * num02) / 2;
+            Task.Delay(3000).Wait();
+
+            Console.WriteLine("The area of the kite is " + result + " Enjoy your answer!");
+
+            Console.ReadKey();
+        }
+    }
+}
+
